@@ -12,7 +12,7 @@ export const App: FC = () => {
       <BrowserRouter>
         <Routes>
           <Route element={<UserAuthGuard />}>
-            <Route path="chat" element={<ChatPage />} />
+            <Route path="/" element={<ChatPage />} />
             <Route path="auth" element={<AuthorizationPage />} />
           </Route>
         </Routes>

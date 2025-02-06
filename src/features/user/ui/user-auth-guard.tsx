@@ -17,7 +17,7 @@ export const UserAuthGuard: FC = observer(() => {
 
   return (
     <>
-      {isAuth ? <Navigate to="/chat" /> : <Navigate to="/auth" />}
+      {isAuth ? <Navigate to="/" /> : <Navigate to="/auth" />}
       <Spin size="large" spinning={isRestoring} fullscreen tip="Загрузка..." />
       {!isRestoring && <Outlet />}
     </>
